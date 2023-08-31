@@ -1,8 +1,6 @@
-/* styles.css */
-
 body {
-    background-color: #121212; /* Color de fondo oscuro */
-    color: #FFFFFF; /* Color del texto */
+    background-color: #121212; 
+    color: #FFFFFF; 
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,7 +14,6 @@ h1{
     justify-content: space-between; 
 }
 
-/* Agrega esto en el archivo styles.css */
 #search-container {
     display: flex;
     justify-content: center;
@@ -34,25 +31,37 @@ h1{
 
 
 .movie-card {
-    border: 1px solid #444; /* Cambia el color del borde */
-    padding: 8px; /* Reduce el padding */
+    border: 1px solid #444; 
+    padding: 8px;
     margin: 10px;
-    width: calc(25% - 20px); /* Ajusta el ancho para mostrar 4 películas por fila */
+    width: calc(25% - 20px); 
     box-sizing: border-box; 
-    background-color: #1E1E1E; /* Color de fondo de la tarjeta */
+    background-color: #1E1E1E; 
 }
 
 #movie-title {
-    font-size: 1rem; /* Reduce el tamaño del título */
-    margin: 8px 0; /* Reduce el margen del título */
+    font-size: 1rem; 
+    margin: 8px 0; 
 }
 
 #movie-overview {
-    font-size: 0.8rem; /* Reduce el tamaño del resumen */
-    margin-bottom: 8px; /* Reduce el margen inferior del resumen */
+    font-size: 0.8rem; 
+    margin-bottom: 8px;
 }
 
 #movie-card, img {
     max-width: 100%;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .movie-card {
+        width: 100%; 
+        margin: 10px 0; 
+    }
 }
